@@ -26,4 +26,37 @@ public class AuditInfo {
 
 	@LastModifiedDate
 	private LocalDateTime updatedOn;
+
+	public String getCreatedBy() {
+		return createdBy;
+	}
+
+	public void setCreatedBy(String createdBy) {
+		this.createdBy = createdBy;
+	}
+
+	public String getUpdatedBy() {
+		return updatedBy;
+	}
+
+	public void setUpdatedBy(String updatedBy) {
+		this.updatedBy = updatedBy;
+	}
+
+	public LocalDateTime getAddedOn() {
+		return addedOn;
+	}
+
+	public void setAddedOn(LocalDateTime addedOn) {
+		this.addedOn = addedOn;
+	}
+
+	public LocalDateTime getUpdatedOn() {
+		return updatedOn;
+	}
+
+	public void setUpdatedOn(LocalDateTime updatedOn) {
+		this.updatedOn = updatedOn;
+	}
+
 }

@@ -8,6 +8,14 @@ import javax.persistence.OneToOne;
 @Entity
 public class Address {
 
+	public String getAddressName() {
+		return addressName;
+	}
+
+	public void setAddressName(String addressName) {
+		this.addressName = addressName;
+	}
+
 	@Id
 	private Long addressId;
 
