@@ -10,6 +10,9 @@ import javax.persistence.Enumerated;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
+import com.eats.models.enums.Category;
+import com.eats.models.enums.Status;
+
 @Entity
 public class Item {
 

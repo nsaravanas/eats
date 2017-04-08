@@ -7,6 +7,8 @@ import javax.persistence.Enumerated;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
 
+import com.eats.models.enums.ModeOfPay;
+
 @Entity
 public class OrderPrice {
 
