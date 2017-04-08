@@ -1,13 +1,28 @@
 package com.eats.models;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.Id;
+import javax.persistence.OneToOne;
+
+@Entity
 public class OrderPrice {
 
+	@Id
+	private Long id;
+
+	@OneToOne
 	private Order order;
 
+	@Column
 	private Double totalAmount;
 
+	@Column
 	private Double amountPaid;
 
+	@Enumerated(EnumType.STRING)
 	private ModeOfPay modeOfPay;
 
 	public Order getOrder() {

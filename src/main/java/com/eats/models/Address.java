@@ -1,15 +1,39 @@
 package com.eats.models;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.Id;
+
+@Entity
 public class Address {
 
+	@Id
 	private Long addressId;
+
+	@Column
 	private String doorNo;
+
+	@Column
 	private String steet;
+
+	@Column
 	private String city;
+
+	@Column
 	private String state;
+
+	@Column
 	private String country;
+
+	@Column
 	private Integer zipCode;
+
+	@Enumerated(EnumType.STRING)
 	private AddressType addressType;
+
+	@Column
 	private boolean isDefault;
 
 	public AddressType getAddressType() {

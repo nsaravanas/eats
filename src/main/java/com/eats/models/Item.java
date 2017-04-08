@@ -1,20 +1,35 @@
 package com.eats.models;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+
+@Entity
 public class Item {
 
-	private Order order;
-
+	@Id
 	private Long itemId;
 
+	@Column
 	private String name;
 
+	@Enumerated(EnumType.STRING)
 	private Status status;
 
+	@Enumerated(EnumType.STRING)
 	private Category category;
 
+	@Enumerated(EnumType.STRING)
 	private FoodType foodType;
 
+	@Column
 	private Double price;
+
+	@ManyToOne
+	private Order order;
 
 	public Double getPrice() {
 		return price;
