@@ -1,6 +1,7 @@
 package com.eats.models;
 
 import javax.persistence.Column;
+import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
@@ -20,14 +21,19 @@ public class Location {
 	@Column
 	private String description;
 
-	@Column
-	private Double latitude;
-
-	@Column
-	private Double longitude;
+	@Embedded
+	private Coordinate coordinate;
 
 	@Column
 	private String landmark;
+
+	public Coordinate getCoordinate() {
+		return coordinate;
+	}
+
+	public void setCoordinate(Coordinate coordinate) {
+		this.coordinate = coordinate;
+	}
 
 	public Long getId() {
 		return id;
@@ -59,22 +65,6 @@ public class Location {
 
 	public void setDescription(String description) {
 		this.description = description;
-	}
-
-	public Double getLatitude() {
-		return latitude;
-	}
-
-	public void setLatitude(Double latitude) {
-		this.latitude = latitude;
-	}
-
-	public Double getLongitude() {
-		return longitude;
-	}
-
-	public void setLongitude(Double longitude) {
-		this.longitude = longitude;
 	}
 
 	public String getLandmark() {

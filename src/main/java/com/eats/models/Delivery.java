@@ -23,7 +23,7 @@ public class Delivery {
 	private Long contactNo;
 
 	@OneToOne
-	private Location location;
+	private Track track;
 
 	@Column
 	private String bikeNo;
@@ -40,6 +40,14 @@ public class Delivery {
 
 	@ManyToOne
 	private Order order;
+
+	public Track getTrack() {
+		return track;
+	}
+
+	public void setTrack(Track track) {
+		this.track = track;
+	}
 
 	public Long getDeliveryId() {
 		return deliveryId;
@@ -63,14 +71,6 @@ public class Delivery {
 
 	public void setContactNo(Long contactNo) {
 		this.contactNo = contactNo;
-	}
-
-	public Location getLocation() {
-		return location;
-	}
-
-	public void setLocation(Location location) {
-		this.location = location;
 	}
 
 	public String getBikeNo() {
