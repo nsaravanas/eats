@@ -30,6 +30,17 @@ public class OrderItemReview extends AuditInfo {
 	@Column
 	private String review;
 
+	@Column
+	private Integer rating;
+
+	public Integer getRating() {
+		return rating;
+	}
+
+	public void setRating(Integer rating) {
+		this.rating = rating;
+	}
+
 	public Long getId() {
 		return id;
 	}
