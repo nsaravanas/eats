@@ -1,13 +1,20 @@
-package com.eats.models;
+package com.eats.models.pref;
 
 import java.util.List;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
+import com.eats.models.Item;
+import com.eats.models.User;
+
 @Entity
 public class UserPreference {
+
+	@Id
+	private Long id;
 
 	@ManyToOne
 	private User user;
@@ -17,6 +24,14 @@ public class UserPreference {
 
 	@OneToMany
 	private List<Item> pastOrders;
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
 
 	public User getUser() {
 		return user;
