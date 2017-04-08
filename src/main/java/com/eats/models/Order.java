@@ -8,8 +8,8 @@ import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.Id;
-import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -25,7 +25,7 @@ public class Order {
 	@ManyToOne
 	private User user;
 
-	@ManyToMany
+	@OneToMany
 	private List<OrderItem> orderItems;
 
 	@Column
@@ -39,15 +39,23 @@ public class Order {
 	@Enumerated(EnumType.STRING)
 	private Status status;
 
-	@ManyToOne
-	private Address deliverTo;
-
 	@Column
 	@Temporal(TemporalType.TIMESTAMP)
 	private LocalDateTime deliveryTime;
 
 	@OneToOne
 	private OrderPrice orderPrice;
+
+	@OneToOne
+	private Delivery delivery;
+
+	public Delivery getDelivery() {
+		return delivery;
+	}
+
+	public void setDelivery(Delivery delivery) {
+		this.delivery = delivery;
+	}
 
 	public List<OrderItem> getOrderItems() {
 		return orderItems;
@@ -111,14 +119,6 @@ public class Order {
 
 	public void setStatus(Status status) {
 		this.status = status;
-	}
-
-	public Address getDeliverTo() {
-		return deliverTo;
-	}
-
-	public void setDeliverTo(Address deliverTo) {
-		this.deliverTo = deliverTo;
 	}
 
 }
