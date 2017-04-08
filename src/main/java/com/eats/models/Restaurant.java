@@ -2,22 +2,32 @@ package com.eats.models;
 
 import java.util.List;
 
-public class Hotel {
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
-	private Long hotelId;
+@Entity
+public class Restaurant {
 
+	@Id
+	private Long restaurantId;
+
+	@Column
 	private String name;
 
+	@OneToMany
 	private List<Address> branches;
 
+	@OneToMany
 	private List<Menu> menu;
 
-	public Long getHotelId() {
-		return hotelId;
+	public Long getRestaurantId() {
+		return restaurantId;
 	}
 
-	public void setHotelId(Long hotelId) {
-		this.hotelId = hotelId;
+	public void setRestaurantId(Long restaurantId) {
+		this.restaurantId = restaurantId;
 	}
 
 	public String getName() {

@@ -1,20 +1,49 @@
 package com.eats.models;
 
+import java.util.Set;
+
+import javax.persistence.Column;
+import javax.persistence.ElementCollection;
+import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+
+@Entity
 public class Item {
 
-	private Order order;
-
+	@Id
 	private Long itemId;
 
+	@Column
 	private String name;
 
+	@Enumerated(EnumType.STRING)
 	private Status status;
 
+	@Enumerated(EnumType.STRING)
 	private Category category;
 
-	private FoodType foodType;
+	@ElementCollection
+	private Set<String> tags;
 
+	@Column
 	private Double price;
+
+	@ManyToOne
+	private Order order;
+
+	@ManyToOne
+	private Menu menu;
+
+	public Menu getMenu() {
+		return menu;
+	}
+
+	public void setMenu(Menu menu) {
+		this.menu = menu;
+	}
 
 	public Double getPrice() {
 		return price;
@@ -64,12 +93,12 @@ public class Item {
 		this.category = category;
 	}
 
-	public FoodType getFoodType() {
-		return foodType;
+	public Set<String> getTags() {
+		return tags;
 	}
 
-	public void setFoodType(FoodType foodType) {
-		this.foodType = foodType;
+	public void setTags(Set<String> tags) {
+		this.tags = tags;
 	}
 
 }

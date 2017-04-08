@@ -3,25 +3,57 @@ package com.eats.models;
 import java.time.LocalDateTime;
 import java.util.List;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.Id;
+import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+
+@Entity
 public class Order {
 
-	private User user;
-
+	@Id
 	private Long orderId;
 
-	private List<Item> items;
+	@ManyToOne
+	private User user;
 
+	@ManyToMany
+	private List<OrderItem> orderItems;
+
+	@Column
+	@Temporal(TemporalType.TIMESTAMP)
 	private LocalDateTime orderedOn;
 
+	@Column
+	@Temporal(TemporalType.TIMESTAMP)
 	private LocalDateTime updatedOn;
 
+	@Enumerated(EnumType.STRING)
 	private Status status;
 
+	@ManyToOne
 	private Address deliverTo;
 
+	@Column
+	@Temporal(TemporalType.TIMESTAMP)
 	private LocalDateTime deliveryTime;
 
+	@OneToOne
 	private OrderPrice orderPrice;
+
+	public List<OrderItem> getOrderItems() {
+		return orderItems;
+	}
+
+	public void setOrderItems(List<OrderItem> orderItems) {
+		this.orderItems = orderItems;
+	}
 
 	public LocalDateTime getDeliveryTime() {
 		return deliveryTime;
@@ -53,14 +85,6 @@ public class Order {
 
 	public void setOrderId(Long orderId) {
 		this.orderId = orderId;
-	}
-
-	public List<Item> getItems() {
-		return items;
-	}
-
-	public void setItems(List<Item> items) {
-		this.items = items;
 	}
 
 	public LocalDateTime getOrderedOn() {

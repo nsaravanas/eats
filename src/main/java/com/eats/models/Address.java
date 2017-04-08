@@ -1,23 +1,60 @@
 package com.eats.models;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.OneToOne;
+
+@Entity
 public class Address {
 
+	@Id
 	private Long addressId;
+
+	@Column
 	private String doorNo;
+
+	@Column
 	private String steet;
+
+	@Column
 	private String city;
+
+	@Column
 	private String state;
+
+	@Column
 	private String country;
+
+	@Column
 	private Integer zipCode;
-	private AddressType addressType;
+
+	@Column
+	private String addressName;
+
+	@OneToOne
+	private Location location;
+
+	@Column
 	private boolean isDefault;
 
-	public AddressType getAddressType() {
-		return addressType;
+	@Column
+	private boolean isUser;
+
+	public boolean isUser() {
+		return isUser;
 	}
 
-	public void setAddressType(AddressType addressType) {
-		this.addressType = addressType;
+	public void setUser(boolean isUser) {
+		this.isUser = isUser;
+	}
+
+	public void setLocation(Location location) {
+		this.location = location;
+	}
+
+	public Location getLocation() {
+		return location;
 	}
 
 	public boolean isDefault() {

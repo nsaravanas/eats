@@ -2,17 +2,36 @@ package com.eats.models;
 
 import java.util.List;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+
+@Entity
 public class Menu {
 
-	private Hotel hotel;
+	@Id
+	private Long id;
 
+	@ManyToOne
+	private Restaurant hotel;
+
+	@OneToMany
 	private List<Item> items;
 
-	public Hotel getHotel() {
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public Restaurant getHotel() {
 		return hotel;
 	}
 
-	public void setHotel(Hotel hotel) {
+	public void setHotel(Restaurant hotel) {
 		this.hotel = hotel;
 	}
 
