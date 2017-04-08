@@ -5,12 +5,15 @@ import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
+
+import org.hibernate.envers.Audited;
+import org.hibernate.envers.RelationTargetAuditMode;
 
 @Entity
+@Audited(targetAuditMode = RelationTargetAuditMode.NOT_AUDITED)
 public class User {
 
 	@Id
@@ -25,11 +28,11 @@ public class User {
 	@Column
 	private String emailId;
 
-	@Temporal(TemporalType.TIMESTAMP)
+	@Column
 	private LocalDateTime userSince;
 
-	@OneToMany
-	private List<Address> addresses;
+	@OneToMany(mappedBy = "user")
+	private List<UserAddress> userAddress;
 
 	public Long getUserId() {
 		return userId;
@@ -71,12 +74,12 @@ public class User {
 		this.userSince = userSince;
 	}
 
-	public List<Address> getAddresses() {
-		return addresses;
+	public List<UserAddress> getUserAddress() {
+		return userAddress;
 	}
 
-	public void setAddresses(List<Address> addresses) {
-		this.addresses = addresses;
+	public void setUserAddress(List<UserAddress> userAddress) {
+		this.userAddress = userAddress;
 	}
 
 }

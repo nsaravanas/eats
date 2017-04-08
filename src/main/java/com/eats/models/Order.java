@@ -11,12 +11,14 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
+
+import org.hibernate.envers.Audited;
+import org.hibernate.envers.RelationTargetAuditMode;
 
 import com.eats.models.enums.Status;
 
 @Entity
+@Audited(targetAuditMode = RelationTargetAuditMode.NOT_AUDITED)
 public class Order {
 
 	@Id
@@ -25,22 +27,19 @@ public class Order {
 	@ManyToOne
 	private User user;
 
-	@OneToMany
+	@OneToMany(mappedBy = "order")
 	private List<OrderItem> orderItems;
 
 	@Column
-	@Temporal(TemporalType.TIMESTAMP)
 	private LocalDateTime orderedOn;
 
 	@Column
-	@Temporal(TemporalType.TIMESTAMP)
 	private LocalDateTime updatedOn;
 
 	@Enumerated(EnumType.STRING)
 	private Status status;
 
 	@Column
-	@Temporal(TemporalType.TIMESTAMP)
 	private LocalDateTime deliveryTime;
 
 	@OneToOne

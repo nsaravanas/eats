@@ -7,7 +7,11 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
+import org.hibernate.envers.Audited;
+import org.hibernate.envers.RelationTargetAuditMode;
+
 @Entity
+@Audited(targetAuditMode = RelationTargetAuditMode.NOT_AUDITED)
 public class Restaurant {
 
 	@Id
@@ -16,10 +20,10 @@ public class Restaurant {
 	@Column
 	private String name;
 
-	@OneToMany
-	private List<Address> branches;
+	@OneToMany(mappedBy = "restaurant")
+	private List<RestaurantAddress> branches;
 
-	@OneToMany
+	@OneToMany(mappedBy = "restaurant")
 	private List<Menu> menu;
 
 	public Long getRestaurantId() {
@@ -38,11 +42,11 @@ public class Restaurant {
 		this.name = name;
 	}
 
-	public List<Address> getBranches() {
+	public List<RestaurantAddress> getBranches() {
 		return branches;
 	}
 
-	public void setBranches(List<Address> branches) {
+	public void setBranches(List<RestaurantAddress> branches) {
 		this.branches = branches;
 	}
 

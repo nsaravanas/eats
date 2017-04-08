@@ -14,9 +14,9 @@ public class Menu {
 	private Long id;
 
 	@ManyToOne
-	private Restaurant hotel;
+	private Restaurant restaurant;
 
-	@OneToMany
+	@OneToMany(mappedBy = "menu")
 	private List<Item> items;
 
 	public Long getId() {
@@ -27,12 +27,12 @@ public class Menu {
 		this.id = id;
 	}
 
-	public Restaurant getHotel() {
-		return hotel;
+	public Restaurant getRestaurant() {
+		return restaurant;
 	}
 
-	public void setHotel(Restaurant hotel) {
-		this.hotel = hotel;
+	public void setRestaurant(Restaurant restaurant) {
+		this.restaurant = restaurant;
 	}
 
 	public List<Item> getItems() {

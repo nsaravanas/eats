@@ -7,8 +7,6 @@ import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
 
 @Entity
 public class TimeCoorinate {
@@ -20,7 +18,6 @@ public class TimeCoorinate {
 	private Track track;
 
 	@Column
-	@Temporal(TemporalType.TIMESTAMP)
 	private LocalDateTime time;
 
 	@Embedded

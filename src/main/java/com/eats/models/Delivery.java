@@ -7,8 +7,6 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
 
 @Entity
 public class Delivery {
@@ -32,11 +30,10 @@ public class Delivery {
 	private String boxId;
 
 	@Column
-	@Temporal(TemporalType.DATE)
 	private LocalDate registrationDate;
 
 	@ManyToOne
-	private Address address;
+	private UserAddress address;
 
 	@ManyToOne
 	private Order order;
@@ -97,11 +94,11 @@ public class Delivery {
 		this.registrationDate = registrationDate;
 	}
 
-	public Address getAddress() {
+	public UserAddress getAddress() {
 		return address;
 	}
 
-	public void setAddress(Address address) {
+	public void setAddress(UserAddress address) {
 		this.address = address;
 	}
 

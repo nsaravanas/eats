@@ -1,23 +1,11 @@
 package com.eats.models;
 
 import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.Embeddable;
 import javax.persistence.OneToOne;
 
-@Entity
+@Embeddable
 public class Address {
-
-	public String getAddressName() {
-		return addressName;
-	}
-
-	public void setAddressName(String addressName) {
-		this.addressName = addressName;
-	}
-
-	@Id
-	private Long addressId;
 
 	@Column
 	private String doorNo;
@@ -40,30 +28,19 @@ public class Address {
 	@Column
 	private String addressName;
 
-	@OneToOne
-	private Location location;
+//	@OneToOne
+//	private Location location;
 
 	@Column
 	private boolean isDefault;
 
-	@Column
-	private boolean isUser;
+//	public void setLocation(Location location) {
+//		this.location = location;
+//	}
 
-	public boolean isUser() {
-		return isUser;
-	}
-
-	public void setUser(boolean isUser) {
-		this.isUser = isUser;
-	}
-
-	public void setLocation(Location location) {
-		this.location = location;
-	}
-
-	public Location getLocation() {
-		return location;
-	}
+//	public Location getLocation() {
+//		return location;
+//	}
 
 	public boolean isDefault() {
 		return isDefault;
@@ -74,14 +51,6 @@ public class Address {
 	}
 
 	private User user;
-
-	public Long getAddressId() {
-		return addressId;
-	}
-
-	public void setAddressId(Long addressId) {
-		this.addressId = addressId;
-	}
 
 	public String getDoorNo() {
 		return doorNo;
@@ -137,6 +106,14 @@ public class Address {
 
 	public void setUser(User user) {
 		this.user = user;
+	}
+
+	public String getAddressName() {
+		return addressName;
+	}
+
+	public void setAddressName(String addressName) {
+		this.addressName = addressName;
 	}
 
 }

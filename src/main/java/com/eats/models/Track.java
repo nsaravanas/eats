@@ -12,7 +12,7 @@ public class Track {
 	@Id
 	private Long trackId;
 
-	@OneToMany
+	@OneToMany(mappedBy = "track")
 	private List<TimeCoorinate> timeCoorinates;
 
 	public Long getTrackId() {

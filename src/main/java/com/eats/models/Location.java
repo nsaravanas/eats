@@ -12,8 +12,8 @@ public class Location {
 	@Id
 	private Long id;
 
-	@OneToOne
-	private Address address;
+//	@OneToOne
+//	private Address address;
 
 	@Column
 	private String title;
@@ -43,13 +43,13 @@ public class Location {
 		this.id = id;
 	}
 
-	public Address getAddress() {
-		return address;
-	}
-
-	public void setAddress(Address address) {
-		this.address = address;
-	}
+//	public Address getAddress() {
+//		return address;
+//	}
+//
+//	public void setAddress(Address address) {
+//		this.address = address;
+//	}
 
 	public String getTitle() {
 		return title;
