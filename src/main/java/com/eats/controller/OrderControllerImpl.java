@@ -3,6 +3,7 @@ package com.eats.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.eats.models.Order;
@@ -16,7 +17,7 @@ public class OrderControllerImpl implements OrderController {
 	private OrderService orderService;
 
 	@Override
-	@RequestMapping("order/{orderId}")
+	@RequestMapping(value = "/order/{orderId}", method = RequestMethod.GET)
 	public Order getOrderById(@PathVariable Long orderId) {
 		return this.orderService.getOrderById(orderId);
 	}
