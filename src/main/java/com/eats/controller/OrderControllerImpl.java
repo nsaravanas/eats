@@ -16,7 +16,7 @@ public class OrderControllerImpl implements OrderController {
 	private OrderService orderService;
 
 	@Override
-	@RequestMapping("/order/{orderId}")
+	@RequestMapping("order/{orderId}")
 	public Order getOrderById(@PathVariable Long orderId) {
 		return this.orderService.getOrderById(orderId);
 	}
