@@ -50,7 +50,7 @@ public class Address {
 		this.isDefault = isDefault;
 	}
 
-	private User user;
+//	private User user;
 
 	public String getDoorNo() {
 		return doorNo;
@@ -100,13 +100,13 @@ public class Address {
 		this.zipCode = zipCode;
 	}
 
-	public User getUser() {
-		return user;
-	}
-
-	public void setUser(User user) {
-		this.user = user;
-	}
+//	public User getUser() {
+//		return user;
+//	}
+//
+//	public void setUser(User user) {
+//		this.user = user;
+//	}
 
 	public String getAddressName() {
 		return addressName;

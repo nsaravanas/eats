@@ -2,15 +2,19 @@ package com.eats.models;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EntityListeners;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
 import org.hibernate.envers.Audited;
-import org.hibernate.envers.RelationTargetAuditMode;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
+
+import com.eats.models.audit.AuditInfo;
 
 @Entity
-@Audited(targetAuditMode = RelationTargetAuditMode.NOT_AUDITED)
-public class OrderItem {
+@Audited
+@EntityListeners(AuditingEntityListener.class)
+public class OrderItem extends AuditInfo {
 
 	@Id
 	private Long id;
