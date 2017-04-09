@@ -11,21 +11,27 @@ import org.springframework.data.annotation.LastModifiedBy;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @EntityListeners(AuditingEntityListener.class)
 @MappedSuperclass
 public class AuditInfo {
 
+	@JsonIgnore
 	@CreatedBy
 	private String createdBy;
 
+	@JsonIgnore
 	@LastModifiedBy
 	private String updatedBy;
 
+	@JsonIgnore
 	@CreatedDate
 	private LocalDateTime addedOn;
 
+	@JsonIgnore
 	@LastModifiedDate
-	private LocalDateTime updatedOn;
+	private LocalDateTime lastUpdatedOn;
 
 	public String getCreatedBy() {
 		return createdBy;
@@ -51,12 +57,12 @@ public class AuditInfo {
 		this.addedOn = addedOn;
 	}
 
-	public LocalDateTime getUpdatedOn() {
-		return updatedOn;
+	public LocalDateTime getLastUpdatedOn() {
+		return lastUpdatedOn;
 	}
 
-	public void setUpdatedOn(LocalDateTime updatedOn) {
-		this.updatedOn = updatedOn;
+	public void setLastUpdatedOn(LocalDateTime lastUpdatedOn) {
+		this.lastUpdatedOn = lastUpdatedOn;
 	}
 
 }

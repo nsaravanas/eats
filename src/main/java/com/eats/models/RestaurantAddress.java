@@ -10,6 +10,7 @@ import org.hibernate.envers.Audited;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import com.eats.models.audit.AuditInfo;
+import com.fasterxml.jackson.annotation.JsonBackReference;
 
 @Entity
 @Audited
@@ -19,6 +20,7 @@ public class RestaurantAddress extends AuditInfo {
 	@Id
 	private Long restaurantAddressId;
 
+	@JsonBackReference
 	@ManyToOne
 	private Restaurant restaurant;
 

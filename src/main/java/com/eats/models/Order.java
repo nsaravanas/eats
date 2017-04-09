@@ -4,6 +4,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 import javax.persistence.Column;
+import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.EntityListeners;
 import javax.persistence.EnumType;
@@ -18,6 +19,7 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import com.eats.models.audit.AuditInfo;
 import com.eats.models.enums.Status;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 @Entity
 @Audited
@@ -30,6 +32,7 @@ public class Order extends AuditInfo {
 	@ManyToOne
 	private User user;
 
+	@JsonManagedReference
 	@OneToMany(mappedBy = "order")
 	private List<OrderItem> orderItems;
 
@@ -45,9 +48,10 @@ public class Order extends AuditInfo {
 	@Column
 	private LocalDateTime deliveryTime;
 
-	@OneToOne
+	@Embedded
 	private OrderPrice orderPrice;
 
+	@JsonManagedReference
 	@OneToOne
 	private Delivery delivery;
 

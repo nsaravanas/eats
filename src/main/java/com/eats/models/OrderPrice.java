@@ -1,26 +1,14 @@
 package com.eats.models;
 
 import javax.persistence.Column;
-import javax.persistence.Entity;
+import javax.persistence.Embeddable;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
-import javax.persistence.Id;
-import javax.persistence.OneToOne;
-
-import org.hibernate.envers.Audited;
-import org.hibernate.envers.RelationTargetAuditMode;
 
 import com.eats.models.enums.ModeOfPay;
 
-@Entity
-@Audited(targetAuditMode = RelationTargetAuditMode.NOT_AUDITED)
+@Embeddable
 public class OrderPrice {
-
-	@Id
-	private Long id;
-
-	@OneToOne
-	private Order order;
 
 	@Column
 	private Double totalAmount;
@@ -30,14 +18,6 @@ public class OrderPrice {
 
 	@Enumerated(EnumType.STRING)
 	private ModeOfPay modeOfPay;
-
-	public Order getOrder() {
-		return order;
-	}
-
-	public void setOrder(Order order) {
-		this.order = order;
-	}
 
 	public Double getTotalAmount() {
 		return totalAmount;
@@ -61,14 +41,6 @@ public class OrderPrice {
 
 	public void setModeOfPay(ModeOfPay modeOfPay) {
 		this.modeOfPay = modeOfPay;
-	}
-
-	public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
 	}
 
 }

@@ -10,6 +10,8 @@ import org.hibernate.envers.Audited;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import com.eats.models.audit.AuditInfo;
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 @Entity
 @Audited
@@ -19,14 +21,16 @@ public class OrderItem extends AuditInfo {
 	@Id
 	private Long id;
 
+	@JsonBackReference
 	@ManyToOne
 	private Order order;
 
+	@JsonManagedReference
 	@ManyToOne
 	private Item item;
 
 	@Column
-	private int quantity;
+	private Integer quantity;
 
 	@Column
 	private double price;
@@ -55,11 +59,11 @@ public class OrderItem extends AuditInfo {
 		this.item = item;
 	}
 
-	public int getQuantity() {
+	public Integer getQuantity() {
 		return quantity;
 	}
 
-	public void setQuantity(int quantity) {
+	public void setQuantity(Integer quantity) {
 		this.quantity = quantity;
 	}
 

@@ -8,12 +8,15 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 @Entity
 public class TimeCoorinate {
 
 	@Id
 	private Long id;
 
+	@JsonBackReference
 	@ManyToOne
 	private Track track;
 

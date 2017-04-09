@@ -12,6 +12,8 @@ import org.hibernate.envers.Audited;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import com.eats.models.audit.AuditInfo;
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 @Entity
 @Audited
@@ -21,9 +23,11 @@ public class Menu extends AuditInfo {
 	@Id
 	private Long id;
 
+	@JsonBackReference
 	@ManyToOne
 	private Restaurant restaurant;
 
+	@JsonManagedReference
 	@OneToMany(mappedBy = "menu")
 	private List<Item> items;
 

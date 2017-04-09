@@ -11,6 +11,9 @@ import javax.persistence.OneToOne;
 import org.hibernate.envers.Audited;
 import org.hibernate.envers.RelationTargetAuditMode;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 @Entity
 @Audited(targetAuditMode = RelationTargetAuditMode.NOT_AUDITED)
 public class Delivery {
@@ -24,6 +27,7 @@ public class Delivery {
 	@Column
 	private Long contactNo;
 
+	@JsonManagedReference
 	@OneToOne
 	private Track track;
 
@@ -39,6 +43,7 @@ public class Delivery {
 	@ManyToOne
 	private UserAddress address;
 
+	@JsonBackReference
 	@ManyToOne
 	private Order order;
 

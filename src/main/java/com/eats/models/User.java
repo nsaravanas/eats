@@ -13,6 +13,7 @@ import org.hibernate.envers.Audited;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import com.eats.models.audit.AuditInfo;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 @Entity
 @Audited
@@ -34,6 +35,7 @@ public class User extends AuditInfo {
 	@Column
 	private LocalDateTime userSince;
 
+	@JsonManagedReference
 	@OneToMany(mappedBy = "user")
 	private List<UserAddress> userAddress;
 

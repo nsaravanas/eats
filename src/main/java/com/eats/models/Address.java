@@ -30,9 +30,6 @@ public class Address {
 	// @OneToOne
 	// private Location location;
 
-	@Column
-	private boolean isDefault;
-
 	// public void setLocation(Location location) {
 	// this.location = location;
 	// }
@@ -40,14 +37,6 @@ public class Address {
 	// public Location getLocation() {
 	// return location;
 	// }
-
-	public boolean isDefault() {
-		return isDefault;
-	}
-
-	public void setDefault(boolean isDefault) {
-		this.isDefault = isDefault;
-	}
 
 	// private User user;
 

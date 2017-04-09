@@ -1,5 +1,6 @@
 package com.eats.models;
 
+import javax.persistence.Column;
 import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.EntityListeners;
@@ -10,6 +11,7 @@ import org.hibernate.envers.Audited;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import com.eats.models.audit.AuditInfo;
+import com.fasterxml.jackson.annotation.JsonBackReference;
 
 @Entity
 @Audited
@@ -19,11 +21,23 @@ public class UserAddress extends AuditInfo {
 	@Id
 	private Long userAddressId;
 
+	@JsonBackReference
 	@ManyToOne
 	private User user;
 
 	@Embedded
 	private Address address;
+
+	@Column
+	private boolean isDefault;
+
+	public boolean isDefault() {
+		return isDefault;
+	}
+
+	public void setDefault(boolean isDefault) {
+		this.isDefault = isDefault;
+	}
 
 	public Long getUserAddressId() {
 		return userAddressId;

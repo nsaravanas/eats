@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.eats.commons.CommonStubs;
 import com.eats.models.Order;
 import com.eats.service.OrderService;
 
@@ -20,6 +21,11 @@ public class OrderControllerImpl implements OrderController {
 	@RequestMapping(value = "/order/{orderId}", method = RequestMethod.GET)
 	public Order getOrderById(@PathVariable Long orderId) {
 		return this.orderService.getOrderById(orderId);
+	}
+
+	@RequestMapping(value = "/sampleorder", method = RequestMethod.GET)
+	public Order testOrder() {
+		return CommonStubs.testOrder();
 	}
 
 }

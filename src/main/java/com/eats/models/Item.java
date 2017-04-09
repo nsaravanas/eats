@@ -17,6 +17,7 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 import com.eats.models.audit.AuditInfo;
 import com.eats.models.enums.Category;
 import com.eats.models.enums.Status;
+import com.fasterxml.jackson.annotation.JsonBackReference;
 
 @Entity
 @Audited
@@ -41,9 +42,7 @@ public class Item extends AuditInfo {
 	@Column
 	private Double price;
 
-	@ManyToOne
-	private Order order;
-
+	@JsonBackReference
 	@ManyToOne
 	private Menu menu;
 
@@ -61,14 +60,6 @@ public class Item extends AuditInfo {
 
 	public void setPrice(Double price) {
 		this.price = price;
-	}
-
-	public Order getOrder() {
-		return order;
-	}
-
-	public void setOrder(Order order) {
-		this.order = order;
 	}
 
 	public Long getItemId() {
