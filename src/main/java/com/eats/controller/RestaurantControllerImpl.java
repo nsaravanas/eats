@@ -26,9 +26,13 @@ public class RestaurantControllerImpl implements RestaurantController {
 		return this.restaurantService.getRestaurantById(restaurantId);
 	}
 
+	@Autowired
+	private DataSource dataSource;
+
 	@Override
 	@RequestMapping(value = "", method = RequestMethod.GET)
 	public List<Restaurant> getAllRestaurants() {
+		System.out.println(this.dataSource);
 		return this.restaurantService.getAllRestaurants();
 	}
 
