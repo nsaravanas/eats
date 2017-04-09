@@ -4,15 +4,19 @@ import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EntityListeners;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
 import org.hibernate.envers.Audited;
-import org.hibernate.envers.RelationTargetAuditMode;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
+
+import com.eats.models.audit.AuditInfo;
 
 @Entity
-@Audited(targetAuditMode = RelationTargetAuditMode.NOT_AUDITED)
-public class Restaurant {
+@Audited
+@EntityListeners(AuditingEntityListener.class)
+public class Restaurant extends AuditInfo {
 
 	@Id
 	private Long restaurantId;
