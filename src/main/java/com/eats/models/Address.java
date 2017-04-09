@@ -2,7 +2,6 @@ package com.eats.models;
 
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
-import javax.persistence.OneToOne;
 
 @Embeddable
 public class Address {
@@ -28,19 +27,19 @@ public class Address {
 	@Column
 	private String addressName;
 
-//	@OneToOne
-//	private Location location;
+	// @OneToOne
+	// private Location location;
 
 	@Column
 	private boolean isDefault;
 
-//	public void setLocation(Location location) {
-//		this.location = location;
-//	}
+	// public void setLocation(Location location) {
+	// this.location = location;
+	// }
 
-//	public Location getLocation() {
-//		return location;
-//	}
+	// public Location getLocation() {
+	// return location;
+	// }
 
 	public boolean isDefault() {
 		return isDefault;
@@ -50,7 +49,7 @@ public class Address {
 		this.isDefault = isDefault;
 	}
 
-//	private User user;
+	// private User user;
 
 	public String getDoorNo() {
 		return doorNo;
@@ -99,14 +98,6 @@ public class Address {
 	public void setZipCode(Integer zipCode) {
 		this.zipCode = zipCode;
 	}
-
-//	public User getUser() {
-//		return user;
-//	}
-//
-//	public void setUser(User user) {
-//		this.user = user;
-//	}
 
 	public String getAddressName() {
 		return addressName;

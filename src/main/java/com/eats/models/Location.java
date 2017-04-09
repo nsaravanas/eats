@@ -4,16 +4,12 @@ import javax.persistence.Column;
 import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.OneToOne;
 
 @Entity
 public class Location {
 
 	@Id
 	private Long id;
-
-//	@OneToOne
-//	private Address address;
 
 	@Column
 	private String title;
@@ -42,14 +38,6 @@ public class Location {
 	public void setId(Long id) {
 		this.id = id;
 	}
-
-//	public Address getAddress() {
-//		return address;
-//	}
-//
-//	public void setAddress(Address address) {
-//		this.address = address;
-//	}
 
 	public String getTitle() {
 		return title;
