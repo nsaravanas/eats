@@ -2,534 +2,625 @@
 <class-diagram version="1.1.14" icons="true" automaticImage="JPEG" always-add-relationships="false" 
   generalizations="true" realizations="true" associations="true" dependencies="false" nesting-relationships="true" 
   router="FAN">  
-  <class id="1" language="java" name="com.eats.models.Coordinate" project="eats" 
-    file="/eats/src/main/java/com/eats/models/Coordinate.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="187" width="151" x="1002" y="2587"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="2" language="java" name="com.eats.models.TimeCoorinate" project="eats" 
-    file="/eats/src/main/java/com/eats/models/TimeCoorinate.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="259" width="176" x="1152" y="1096"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="3" language="java" name="com.eats.models.Menu" project="eats" 
-    file="/eats/src/main/java/com/eats/models/Menu.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="205" width="148" x="219" y="1647"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="4" language="java" name="com.eats.models.reviews.OrderReview" project="eats" 
-    file="/eats/src/main/java/com/eats/models/reviews/OrderReview.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="313" width="135" x="524" y="1096"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="5" language="java" name="com.eats.models.Track" project="eats" 
+  <class id="1" language="java" name="com.eats.models.Track" project="eats" 
     file="/eats/src/main/java/com/eats/models/Track.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="169" width="245" x="1062" y="1647"/>    
+    <position height="169" width="245" x="257" y="1647"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="6" language="java" name="com.eats.models.Delivery" project="eats" 
+  <class id="2" language="java" name="com.eats.models.Delivery" project="eats" 
     file="/eats/src/main/java/com/eats/models/Delivery.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="511" width="198" x="720" y="1096"/>    
+    <position height="511" width="198" x="578" y="1096"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <enumeration id="7" language="java" name="com.eats.models.enums.Status" project="eats" 
+  <enumeration id="3" language="java" name="com.eats.models.enums.Status" project="eats" 
     file="/eats/src/main/java/com/eats/models/enums/Status.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="187" width="133" x="952" y="2162"/>    
+    <position height="187" width="133" x="841" y="2162"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </enumeration>  
-  <class id="8" language="java" name="com.eats.models.User" project="eats" 
+  <class id="4" language="java" name="com.eats.models.User" project="eats" 
     file="/eats/src/main/java/com/eats/models/User.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="385" width="191" x="484" y="2162"/>    
+    <position height="385" width="222" x="1014" y="2162"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="9" language="java" name="com.eats.models.reviews.OrderItemReview" project="eats" 
-    file="/eats/src/main/java/com/eats/models/reviews/OrderItemReview.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="313" width="168" x="680" y="372"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="10" language="java" name="com.eats.models.audit.AuditInfo" project="eats" 
-    file="/eats/src/main/java/com/eats/models/audit/AuditInfo.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="295" width="197" x="352" y="37"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="11" language="java" name="com.eats.models.pref.UserPreference" project="eats" 
-    file="/eats/src/main/java/com/eats/models/pref/UserPreference.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="241" width="173" x="74" y="743"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <enumeration id="12" language="java" name="com.eats.models.enums.Category" project="eats" 
-    file="/eats/src/main/java/com/eats/models/enums/Category.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="133" width="138" x="41" y="1647"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </enumeration>  
-  <class id="13" language="java" name="com.eats.models.Location" project="eats" 
+  <class id="5" language="java" name="com.eats.models.Location" project="eats" 
     file="/eats/src/main/java/com/eats/models/Location.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="367" width="176" x="736" y="2162"/>    
+    <position height="331" width="176" x="41" y="2162"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="14" language="java" name="com.eats.models.Item" project="eats" 
+  <class id="6" language="java" name="com.eats.models.RestaurantAddress" project="eats" 
+    file="/eats/src/main/java/com/eats/models/RestaurantAddress.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="205" width="195" x="1748" y="1647"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="com.eats.models.Item" project="eats" 
     file="/eats/src/main/java/com/eats/models/Item.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="439" width="158" x="41" y="1096"/>    
+    <position height="439" width="158" x="1178" y="1096"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="15" language="java" name="com.eats.models.Address" project="eats" 
-    file="/eats/src/main/java/com/eats/models/Address.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="691" width="166" x="579" y="2587"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="16" language="java" name="com.eats.models.Restaurant" project="eats" 
+  <class id="8" language="java" name="com.eats.models.Restaurant" project="eats" 
     file="/eats/src/main/java/com/eats/models/Restaurant.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="259" width="182" x="239" y="1096"/>    
+    <position height="259" width="235" x="1708" y="2162"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="17" language="java" name="com.eats.models.Order" project="eats" 
+  <class id="9" language="java" name="com.eats.models.Order" project="eats" 
     file="/eats/src/main/java/com/eats/models/Order.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="475" width="204" x="818" y="1647"/>    
+    <position height="475" width="204" x="542" y="1647"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="18" language="java" name="com.eats.models.OrderItem" project="eats" 
+  <class id="10" language="java" name="com.eats.models.OrderItem" project="eats" 
     file="/eats/src/main/java/com/eats/models/OrderItem.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="133" width="87" x="939" y="743"/>    
+    <position height="313" width="126" x="646" y="743"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <enumeration id="19" language="java" name="com.eats.models.enums.ModeOfPay" project="eats" 
+  <enumeration id="11" language="java" name="com.eats.models.enums.ModeOfPay" project="eats" 
     file="/eats/src/main/java/com/eats/models/enums/ModeOfPay.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="133" width="135" x="1193" y="2587"/>    
+    <position height="133" width="135" x="542" y="2713"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </enumeration>  
-  <class id="20" language="java" name="com.eats.models.reviews.RestaurantReview" project="eats" 
+  <class id="12" language="java" name="com.eats.models.reviews.RestaurantReview" project="eats" 
     file="/eats/src/main/java/com/eats/models/reviews/RestaurantReview.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="313" width="176" x="287" y="743"/>    
+    <position height="313" width="176" x="1117" y="1647"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="21" language="java" name="com.eats.models.OrderPrice" project="eats" 
+  <class id="13" language="java" name="com.eats.models.OrderPrice" project="eats" 
     file="/eats/src/main/java/com/eats/models/OrderPrice.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="277" width="182" x="1125" y="2162"/>    
+    <position height="313" width="182" x="542" y="2162"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="22" language="java" name="com.eats.models.reviews.GeneralReview" project="eats" 
+  <class id="14" language="java" name="com.eats.models.Coordinate" project="eats" 
+    file="/eats/src/main/java/com/eats/models/Coordinate.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="187" width="151" x="149" y="2713"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="com.eats.models.TimeCoorinate" project="eats" 
+    file="/eats/src/main/java/com/eats/models/TimeCoorinate.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="259" width="176" x="257" y="2162"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="com.eats.models.Menu" project="eats" 
+    file="/eats/src/main/java/com/eats/models/Menu.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="205" width="176" x="1511" y="1647"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="17" language="java" name="com.eats.models.reviews.OrderReview" project="eats" 
+    file="/eats/src/main/java/com/eats/models/reviews/OrderReview.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="313" width="135" x="837" y="1096"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="18" language="java" name="com.eats.models.UserAddress" project="eats" 
+    file="/eats/src/main/java/com/eats/models/UserAddress.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="205" width="165" x="786" y="1647"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="19" language="java" name="com.eats.models.reviews.OrderItemReview" project="eats" 
+    file="/eats/src/main/java/com/eats/models/reviews/OrderItemReview.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="313" width="168" x="785" y="372"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="20" language="java" name="com.eats.models.audit.AuditInfo" project="eats" 
+    file="/eats/src/main/java/com/eats/models/audit/AuditInfo.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="295" width="197" x="1186" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="21" language="java" name="com.eats.models.pref.UserPreference" project="eats" 
+    file="/eats/src/main/java/com/eats/models/pref/UserPreference.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="241" width="173" x="1157" y="743"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="22" language="java" name="com.eats.models.enums.Category" project="eats" 
+    file="/eats/src/main/java/com/eats/models/enums/Category.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="133" width="138" x="1333" y="1647"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="23" language="java" name="com.eats.models.Address" project="eats" 
+    file="/eats/src/main/java/com/eats/models/Address.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="511" width="166" x="1276" y="2162"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="24" language="java" name="com.eats.models.reviews.GeneralReview" project="eats" 
     file="/eats/src/main/java/com/eats/models/reviews/GeneralReview.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="331" width="151" x="352" y="372"/>    
+    <position height="331" width="151" x="1014" y="372"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <association id="23">    
-    <end type="SOURCE" refId="13" navigable="false">      
-      <attribute id="24" name="coordinate"/>      
-      <multiplicity id="25" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="1" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
+  <generalization id="25">    
+    <bendpoint x="1237" y="372"/>    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="20"/>  
+  </generalization>  
   <association id="26">    
-    <bendpoint x="493" y="743"/>    
-    <bendpoint x="493" y="1096"/>    
-    <bendpoint x="493" y="1647"/>    
-    <end type="SOURCE" refId="22" navigable="false">      
-      <attribute id="27" name="user"/>      
+    <bendpoint x="526" y="1096"/>    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="27" name="order"/>      
       <multiplicity id="28" minimum="0" maximum="1"/>    
     </end>    
-    <end type="TARGET" refId="8" navigable="true"/>    
+    <end type="TARGET" refId="9" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="29">    
-    <end type="SOURCE" refId="21" navigable="false">      
-      <attribute id="30" name="modeOfPay"/>      
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="30" name="address"/>      
       <multiplicity id="31" minimum="0" maximum="1"/>    
     </end>    
-    <end type="TARGET" refId="19" navigable="true"/>    
+    <end type="TARGET" refId="18" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="32">    
-    <end type="SOURCE" refId="11" navigable="false">      
-      <attribute id="33" name="favourites"/>      
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="33" name="branches"/>      
       <multiplicity id="34" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="14" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="35">    
-    <end type="SOURCE" refId="14" navigable="false">      
-      <attribute id="36" name="order"/>      
-      <multiplicity id="37" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="17" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="38">    
-    <end type="SOURCE" refId="15" navigable="false">      
-      <attribute id="39" name="user"/>      
-      <multiplicity id="40" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="8" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="41">    
-    <bendpoint x="222" y="372"/>    
-    <end type="SOURCE" refId="11"/>    
-    <end type="TARGET" refId="10"/>  
-  </generalization>  
-  <association id="42">    
-    <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="43" name="order"/>      
-      <multiplicity id="44" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="17" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="45">    
-    <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="46" name="track"/>      
-      <multiplicity id="47" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="5" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="48">    
-    <end type="SOURCE" refId="9"/>    
-    <end type="TARGET" refId="10"/>  
-  </generalization>  
-  <association id="49">    
-    <end type="SOURCE" refId="18" navigable="false">      
-      <attribute id="50" name="item"/>      
-      <multiplicity id="51" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="14" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="52">    
-    <end type="SOURCE" refId="22"/>    
-    <end type="TARGET" refId="10"/>  
-  </generalization>  
-  <association id="53">    
-    <end type="SOURCE" refId="20" navigable="false">      
-      <attribute id="54" name="restaurant"/>      
-      <multiplicity id="55" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="16" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="56">    
-    <end type="SOURCE" refId="17" navigable="false">      
-      <attribute id="57" name="delivery"/>      
-      <multiplicity id="58" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="6" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="59">    
-    <bendpoint x="472" y="1096"/>    
-    <bendpoint x="472" y="1647"/>    
-    <end type="SOURCE" refId="20" navigable="false">      
-      <attribute id="60" name="user"/>      
-      <multiplicity id="61" minimum="0" maximum="1"/>    
+  <association id="35">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="36" name="category"/>      
+      <multiplicity id="37" minimum="0" maximum="1"/>    
     </end>    
-    <end type="TARGET" refId="8" navigable="true"/>    
+    <end type="TARGET" refId="22" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="62">    
-    <end type="SOURCE" refId="21" navigable="false">      
-      <attribute id="63" name="order"/>      
-      <multiplicity id="64" minimum="0" maximum="1"/>    
+  <generalization id="38">    
+    <bendpoint x="1738" y="1096"/>    
+    <bendpoint x="1738" y="743"/>    
+    <bendpoint x="1738" y="372"/>    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="20"/>  
+  </generalization>  
+  <association id="39">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="40" name="order"/>      
+      <multiplicity id="41" minimum="0" maximum="1"/>    
     </end>    
-    <end type="TARGET" refId="17" navigable="true"/>    
+    <end type="TARGET" refId="9" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="65">    
-    <end type="SOURCE" refId="14" navigable="false">      
-      <attribute id="66" name="category"/>      
-      <multiplicity id="67" minimum="0" maximum="1"/>    
+  <association id="42">    
+    <bendpoint x="1023" y="743"/>    
+    <bendpoint x="1023" y="1096"/>    
+    <bendpoint x="1023" y="1647"/>    
+    <end type="SOURCE" refId="24" navigable="false">      
+      <attribute id="43" name="user"/>      
+      <multiplicity id="44" minimum="0" maximum="1"/>    
     </end>    
-    <end type="TARGET" refId="12" navigable="true"/>    
+    <end type="TARGET" refId="4" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="68">    
-    <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="69" name="order"/>      
-      <multiplicity id="70" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="17" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="71">    
-    <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="72" name="hotel"/>      
-      <multiplicity id="73" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="16" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="74">    
-    <end type="SOURCE" refId="17" navigable="false">      
-      <attribute id="75" name="orderPrice"/>      
-      <multiplicity id="76" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="21" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="77">    
-    <bendpoint x="514" y="1647"/>    
-    <end type="SOURCE" refId="4" navigable="false">      
-      <attribute id="78" name="user"/>      
-      <multiplicity id="79" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="8" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="80">    
-    <end type="SOURCE" refId="17" navigable="false">      
-      <attribute id="81" name="status"/>      
-      <multiplicity id="82" minimum="0" maximum="1"/>    
+  <association id="45">    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="46" name="item"/>      
+      <multiplicity id="47" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="7" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="83">    
-    <end type="SOURCE" refId="9" navigable="false">      
-      <attribute id="84" name="orderItem"/>      
-      <multiplicity id="85" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="18" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="86">    
-    <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="87" name="items"/>      
-      <multiplicity id="88" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="14" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="89">    
-    <end type="SOURCE" refId="5" navigable="false">      
-      <attribute id="90" name="timeCoorinates"/>      
-      <multiplicity id="91" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="2" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="92">    
-    <bendpoint x="409" y="1647"/>    
-    <bendpoint x="409" y="2162"/>    
-    <end type="SOURCE" refId="16" navigable="false">      
-      <attribute id="93" name="branches"/>      
-      <multiplicity id="94" minimum="0" maximum="2147483647"/>    
+  <generalization id="48">    
+    <bendpoint x="1381" y="1096"/>    
+    <bendpoint x="1381" y="743"/>    
+    <bendpoint x="1381" y="372"/>    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="20"/>  
+  </generalization>  
+  <association id="49">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="50" name="timeCoorinates"/>      
+      <multiplicity id="51" minimum="0" maximum="2147483647"/>    
     </end>    
     <end type="TARGET" refId="15" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="95">    
-    <bendpoint x="969" y="1096"/>    
-    <end type="SOURCE" refId="17" navigable="false">      
-      <attribute id="96" name="orderItems"/>      
-      <multiplicity id="97" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="18" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="98">    
-    <bendpoint x="451" y="1096"/>    
-    <bendpoint x="451" y="1647"/>    
-    <end type="SOURCE" refId="11" navigable="false">      
-      <attribute id="99" name="user"/>      
-      <multiplicity id="100" minimum="0" maximum="1"/>    
+  <generalization id="52">    
+    <bendpoint x="505" y="1096"/>    
+    <bendpoint x="505" y="743"/>    
+    <bendpoint x="505" y="372"/>    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="20"/>  
+  </generalization>  
+  <association id="53">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="54" name="restaurant"/>      
+      <multiplicity id="55" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="8" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="101">    
-    <end type="SOURCE" refId="16" navigable="false">      
-      <attribute id="102" name="menu"/>      
-      <multiplicity id="103" minimum="0" maximum="2147483647"/>    
+  <association id="56">    
+    <end type="SOURCE" refId="21" navigable="false">      
+      <attribute id="57" name="pastOrders"/>      
+      <multiplicity id="58" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="59">    
+    <end type="SOURCE" refId="17" navigable="false">      
+      <attribute id="60" name="order"/>      
+      <multiplicity id="61" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="62">    
+    <bendpoint x="1086" y="1647"/>    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="63" name="status"/>      
+      <multiplicity id="64" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="3" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
+  <association id="65">    
+    <bendpoint x="1147" y="1096"/>    
+    <bendpoint x="1065" y="1647"/>    
+    <end type="SOURCE" refId="21" navigable="false">      
+      <attribute id="66" name="user"/>      
+      <multiplicity id="67" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="68">    
+    <bendpoint x="1044" y="1647"/>    
+    <bendpoint x="1074" y="1096"/>    
+    <bendpoint x="1105" y="743"/>    
+    <bendpoint x="1195" y="372"/>    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="20"/>  
+  </generalization>  
+  <association id="69">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="70" name="menu"/>      
+      <multiplicity id="71" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="16" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="72">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="73" name="order"/>      
+      <multiplicity id="74" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="75">    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="76" name="delivery"/>      
+      <multiplicity id="77" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="78">    
+    <end type="SOURCE" refId="6" navigable="false">      
+      <attribute id="79" name="address"/>      
+      <multiplicity id="80" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="23" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="81">    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="82" name="user"/>      
+      <multiplicity id="83" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="84">    
+    <end type="SOURCE" refId="15" navigable="false">      
+      <attribute id="85" name="coordinate"/>      
+      <multiplicity id="86" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="14" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="87">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="88" name="coordinate"/>      
+      <multiplicity id="89" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="14" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="90">    
+    <bendpoint x="962" y="743"/>    
+    <bendpoint x="1002" y="1096"/>    
+    <bendpoint x="1002" y="1647"/>    
+    <end type="SOURCE" refId="19" navigable="false">      
+      <attribute id="91" name="user"/>      
+      <multiplicity id="92" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="93">    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="94" name="status"/>      
+      <multiplicity id="95" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="96">    
+    <bendpoint x="733" y="372"/>    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="20"/>  
+  </generalization>  
+  <association id="97">    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="98" name="orderPrice"/>      
+      <multiplicity id="99" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="100">    
+    <end type="SOURCE" refId="18" navigable="false">      
+      <attribute id="101" name="user"/>      
+      <multiplicity id="102" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="103">    
+    <bendpoint x="1717" y="1647"/>    
+    <bendpoint x="1717" y="1096"/>    
+    <bendpoint x="1717" y="743"/>    
+    <bendpoint x="1717" y="372"/>    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="20"/>  
+  </generalization>  
   <generalization id="104">    
-    <bendpoint x="321" y="372"/>    
-    <end type="SOURCE" refId="20"/>    
-    <end type="TARGET" refId="10"/>  
+    <bendpoint x="1360" y="743"/>    
+    <bendpoint x="1360" y="372"/>    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="20"/>  
   </generalization>  
   <association id="105">    
-    <bendpoint x="689" y="743"/>    
-    <bendpoint x="689" y="1096"/>    
-    <bendpoint x="684" y="1647"/>    
-    <end type="SOURCE" refId="9" navigable="false">      
-      <attribute id="106" name="user"/>      
-      <multiplicity id="107" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="8" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="108">    
-    <bendpoint x="1337" y="1647"/>    
-    <bendpoint x="1337" y="2162"/>    
-    <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="109" name="coordinate"/>      
-      <multiplicity id="110" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="1" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <generalization id="111">    
-    <bendpoint x="533" y="743"/>    
-    <bendpoint x="533" y="372"/>    
-    <end type="SOURCE" refId="4"/>    
-    <end type="TARGET" refId="10"/>  
-  </generalization>  
-  <association id="112">    
-    <bendpoint x="705" y="1647"/>    
-    <bendpoint x="705" y="2162"/>    
-    <end type="SOURCE" refId="6" navigable="false">      
-      <attribute id="113" name="address"/>      
-      <multiplicity id="114" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="15" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="115">    
-    <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="116" name="track"/>      
-      <multiplicity id="117" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="5" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="118">    
-    <bendpoint x="948" y="1096"/>    
-    <end type="SOURCE" refId="18" navigable="false">      
-      <attribute id="119" name="order"/>      
-      <multiplicity id="120" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="17" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="121">    
-    <bendpoint x="430" y="1647"/>    
-    <end type="SOURCE" refId="14" navigable="false">      
-      <attribute id="122" name="status"/>      
-      <multiplicity id="123" minimum="0" maximum="1"/>    
+    <end type="SOURCE" refId="16" navigable="false">      
+      <attribute id="106" name="items"/>      
+      <multiplicity id="107" minimum="0" maximum="2147483647"/>    
     </end>    
     <end type="TARGET" refId="7" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="124">    
+  <association id="108">    
+    <end type="SOURCE" refId="21" navigable="false">      
+      <attribute id="109" name="favourites"/>      
+      <multiplicity id="110" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="111">    
+    <end type="SOURCE" refId="19" navigable="false">      
+      <attribute id="112" name="orderItem"/>      
+      <multiplicity id="113" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="114">    
+    <bendpoint x="806" y="1096"/>    
+    <bendpoint x="802" y="743"/>    
+    <bendpoint x="754" y="372"/>    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="20"/>  
+  </generalization>  
+  <association id="115">    
+    <end type="SOURCE" refId="15" navigable="false">      
+      <attribute id="116" name="track"/>      
+      <multiplicity id="117" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="118">    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="119" name="user"/>      
+      <multiplicity id="120" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="121">    
+    <bendpoint x="981" y="1647"/>    
     <end type="SOURCE" refId="17" navigable="false">      
-      <attribute id="125" name="user"/>      
+      <attribute id="122" name="user"/>      
+      <multiplicity id="123" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="124">    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="125" name="restaurant"/>      
       <multiplicity id="126" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="8" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="127">    
-    <end type="SOURCE" refId="11" navigable="false">      
-      <attribute id="128" name="pastOrders"/>      
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="128" name="menu"/>      
       <multiplicity id="129" minimum="0" maximum="2147483647"/>    
     </end>    
-    <end type="TARGET" refId="14" navigable="true"/>    
+    <end type="TARGET" refId="16" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="130">    
-    <end type="SOURCE" refId="14" navigable="false">      
-      <attribute id="131" name="menu"/>      
-      <multiplicity id="132" minimum="0" maximum="1"/>    
+  <generalization id="130">    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="20"/>  
+  </generalization>  
+  <association id="131">    
+    <end type="SOURCE" refId="2" navigable="false">      
+      <attribute id="132" name="track"/>      
+      <multiplicity id="133" minimum="0" maximum="1"/>    
     </end>    
-    <end type="TARGET" refId="3" navigable="true"/>    
+    <end type="TARGET" refId="1" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="133">    
-    <end type="SOURCE" refId="8" navigable="false">      
-      <attribute id="134" name="addresses"/>      
-      <multiplicity id="135" minimum="0" maximum="2147483647"/>    
+  <association id="134">    
+    <end type="SOURCE" refId="13" navigable="false">      
+      <attribute id="135" name="modeOfPay"/>      
+      <multiplicity id="136" minimum="0" maximum="1"/>    
     </end>    
-    <end type="TARGET" refId="15" navigable="true"/>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="137">    
+    <bendpoint x="547" y="1096"/>    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="138" name="orderItems"/>      
+      <multiplicity id="139" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="140">    
+    <end type="SOURCE" refId="24"/>    
+    <end type="TARGET" refId="20"/>  
+  </generalization>  
+  <association id="141">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="142" name="userAddress"/>      
+      <multiplicity id="143" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="18" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="144">    
+    <end type="SOURCE" refId="16" navigable="false">      
+      <attribute id="145" name="restaurant"/>      
+      <multiplicity id="146" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="147">    
+    <end type="SOURCE" refId="13" navigable="false">      
+      <attribute id="148" name="order"/>      
+      <multiplicity id="149" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="150">    
+    <bendpoint x="1126" y="1096"/>    
+    <bendpoint x="1126" y="743"/>    
+    <bendpoint x="1216" y="372"/>    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="20"/>  
+  </generalization>  
+  <generalization id="151">    
+    <bendpoint x="983" y="743"/>    
+    <bendpoint x="983" y="372"/>    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="20"/>  
+  </generalization>  
+  <association id="152">    
+    <end type="SOURCE" refId="18" navigable="false">      
+      <attribute id="153" name="address"/>      
+      <multiplicity id="154" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="23" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
